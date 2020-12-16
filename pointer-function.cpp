@@ -2,15 +2,9 @@
 
 using namespace std;
 
-void fungsi (int *b){
-    cout << "address b " << b << endl;
-    cout << " nilai b " << *b << endl;
-}
+void fungsi(int *);
 
-void kuadrat (int *valPtr){
-    *valPtr = (*valPtr) * (*valPtr);
-    cout << "kuadrat dari si a " << *valPtr << endl;
-}
+void kuadrat(int *);
 
 int main(){
     int a = 5;
@@ -21,4 +15,14 @@ int main(){
     kuadrat(&a);
     cin.get();
     return 0;
+}
+
+void fungsi (int *b){
+    cout << "address b " << b << endl;
+    cout << " nilai b " << *b << endl;
+}
+
+void kuadrat (int *valPtr){
+    *valPtr = (*valPtr) * (*valPtr);
+    cout << "kuadrat dari si a " << *valPtr << endl;
 }
